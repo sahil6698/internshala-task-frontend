@@ -63,7 +63,7 @@ function App({history}) {
     };
 
     return (
-        loading ? <CircularProgress />:
+        loading ? <CircularProgress style={{top: '50%', left: '50%', position: "absolute"}}/>:
             <UserContext.Provider value={{user, logout, login}}>
                 <div>
                     <Switch>
