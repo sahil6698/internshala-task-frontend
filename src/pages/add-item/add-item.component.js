@@ -40,8 +40,8 @@ const AddItemComponent = ({enqueueSnackbar, history}) => {
     const [title, setTitle] = useState("");
     const [type, setType] = useState("");
     const [category, setCategory] = useState("");
-    const [price, setPrice] = useState();
-    const [calories, setCalories] = useState();
+    const [price, setPrice] = useState("");
+    const [calories, setCalories] = useState("");
     const {user, logout} = useContext(UserContext);
     useEffect(() => {
         if (!GenUtil.GetJWT() || Object.keys(user).length === 0) {
@@ -155,7 +155,9 @@ const AddItemComponent = ({enqueueSnackbar, history}) => {
                                 id="price"
                                 value={price}
                                 type='number'
-                                inputProps={{min: '0', max: '10000', step: "1"} }
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
                                 onChange={handleChange}
                                 label="Price"
                                 name="price"
@@ -170,7 +172,9 @@ const AddItemComponent = ({enqueueSnackbar, history}) => {
                                 id="calories"
                                 value={calories}
                                 type='number'
-                                inputProps={{min: '0', max: '10000', step: "1"} }
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
                                 onChange={handleChange}
                                 label="Calories"
                                 name="calories"
