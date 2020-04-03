@@ -73,6 +73,7 @@ const MenuItemsTable = ({menuItems, asyncFetchOrders, enqueueSnackbar}) => {
 
     const columns = user.role === 'customer' ? [
         { id: 'title', label: 'Name', minWidth: 100 },
+        { id: 'restaurantName', label: 'Restaurant Name', minWidth: 100 },
         { id: 'type', label: 'Type', minWidth: 200 },
         { id: 'category', label: 'Category', minWidth: 100 },
         { id: 'price', label: 'Price', minWidth: 100 },
