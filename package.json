@@ -1,13 +1,15 @@
 {
-  "name": "marquee-task-frontend",
+  "name": "internshala-task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.45",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "add": "^2.0.6",
     "axios": "^0.19.2",
     "node-sass": "^4.13.1",
     "notistack": "^0.9.9",
@@ -15,7 +17,8 @@
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
-    "use-debounce": "^3.3.0"
+    "use-debounce": "^3.3.0",
+    "yarn": "^1.22.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,8 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@material-ui/icons": "^4.9.1"
   }
 }
