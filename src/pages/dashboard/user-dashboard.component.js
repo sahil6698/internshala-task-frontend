@@ -54,7 +54,7 @@ const UserDashboard = ({enqueueSnackbar, history}) => {
         const jsonRes = await res.json();
         if (res.status > 300) {
             if (res.status === 401) {
-                await logout()
+                await logout();
                 history.push('/');
             }
         }
@@ -66,6 +66,13 @@ const UserDashboard = ({enqueueSnackbar, history}) => {
         if (!GenUtil.GetJWT()) {
             history.push('/');
             signInToContinueToast()
+            return;
+        }
+
+        if (Object.keys(user).length === 0) {
+            GenUtil.unSetJWT();
+            signInToContinueToast();
+            return;
         }
 
 

@@ -65,7 +65,7 @@
       <updated>1583586752008</updated>
       <workItem from="1583586753856" duration="13931000" />
       <workItem from="1584338150960" duration="314000" />
-      <workItem from="1585842100267" duration="22124000" />
+      <workItem from="1585842100267" duration="23661000" />
     </task>
     <servers />
   </component>
@@ -84,6 +84,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="255" y="179" key="EditFileWatcherDialog/0.0.1280.800@0.0.1280.800" timestamp="1583591189471" />
+    <state x="70" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1585911615940">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="70" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1280.800@0.0.1280.800" timestamp="1585911615940" />
     <state width="1238" height="258" key="GridCell.Tab.0.bottom" timestamp="1585856633451">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -148,13 +152,13 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="258" key="GridCell.Tab.3.right/0.0.1280.800@0.0.1280.800" timestamp="1585856633462" />
-    <state x="311" y="143" width="657" height="514" key="find.popup" timestamp="1585910107845">
+    <state x="311" y="143" width="657" height="514" key="find.popup" timestamp="1585916257129">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="311" y="143" width="657" height="514" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585910107845" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1585910371052">
+    <state x="311" y="143" width="657" height="514" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585916257129" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1585916304451">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585910371052" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585916304451" />
   </component>
 </project>

@@ -44,7 +44,7 @@ const AddItemComponent = ({enqueueSnackbar, history}) => {
     const [calories, setCalories] = useState();
     const {user, logout} = useContext(UserContext);
     useEffect(() => {
-        if (!GenUtil.GetJWT()) {
+        if (!GenUtil.GetJWT() || Object.keys(user).length === 0) {
             enqueueSnackbar('Login first to access this page', {
                 variant: 'error',
                 anchorOrigin: {
@@ -53,8 +53,7 @@ const AddItemComponent = ({enqueueSnackbar, history}) => {
                 }
             });
             history.push('/')
-        }
-        if (user.role !== 'restaurant') {
+        } else if (user.role !== 'restaurant') {
             history.push('/dashboard')
         }
     }, []);
