@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 const UserDashboard = ({enqueueSnackbar, history}) => {
     const classes = useStyles();
     const [orders, setOrders] = useState([]);
-    const {user, logoutUser} = useContext(UserContext);
+    const {user, logout} = useContext(UserContext);
     const [menuItems, setMenuItems] = useState([]);
     const signInToContinueToast = () => {
         enqueueSnackbar('Please sign in first', {
@@ -44,11 +44,6 @@ const UserDashboard = ({enqueueSnackbar, history}) => {
             }
         })
     };
-
-    const logout = async () => {
-        await logoutUser();
-        history.push('/')
-    };
     const asyncFetchOrders = async () => {
         const res = await fetch(`${BASEURL}order`, {
             method: 'GET',
@@ -58,8 +53,10 @@ const UserDashboard = ({enqueueSnackbar, history}) => {
         });
         const jsonRes = await res.json();
         if (res.status > 300) {
-            GenUtil.unSetJWT();
-            await logout();
+            if (res.status === 401) {
+                await logout()
+                history.push('/');
+            }
         }
         setOrders(jsonRes.data);
     };
@@ -81,7 +78,7 @@ const UserDashboard = ({enqueueSnackbar, history}) => {
             });
             const jsonRes = await res.json();
             if (res.status === 401) {
-                GenUtil.unSetJWT();
+                await logout;
             }
             setMenuItems(jsonRes.data);
         };

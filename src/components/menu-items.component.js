@@ -29,7 +29,7 @@ const MenuItemsTable = ({menuItems, asyncFetchOrders, enqueueSnackbar}) => {
     const classes = useStyles();
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
-    const {user} = useContext(UserContext);
+    const {user, logout} = useContext(UserContext);
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
     };
@@ -47,6 +47,9 @@ const MenuItemsTable = ({menuItems, asyncFetchOrders, enqueueSnackbar}) => {
             })
         });
         const jsonRes = await res.json();
+        if (res.status === 401) {
+            await logout()
+        }
         if (res.status < 300 ){
             await asyncFetchOrders();
             enqueueSnackbar('Order created successfully.', {

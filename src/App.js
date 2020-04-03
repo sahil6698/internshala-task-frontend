@@ -13,6 +13,11 @@ import NotFoundComponent from "./components/not-found.component";
 export const UserContext = createContext({});
 function App() {
     const [user, setUser] = useState({});
+    const logout = async () => {
+        GenUtil.unSetJWT();
+        await updateUser();
+        history.push('/');
+    };
     const updateUser = async () => {
         if (GenUtil.GetJWT()) {
             const res = await fetch(`${BASEURL}user`, {
@@ -21,6 +26,9 @@ function App() {
                 }
             });
             if (res.status < 300 ){
+                if (res.status === 401) {
+                    await logout()
+                }
                 const jsonRes = await res.json();
                 const data = jsonRes.data;
                 setUser({
@@ -45,12 +53,9 @@ function App() {
         GenUtil.SetJWT(token);
         await updateUser();
     };
-    const logoutUser = async () => {
-        GenUtil.unSetJWT();
-        await updateUser();
-    };
+
     return (
-      <UserContext.Provider value={{user, logoutUser, login}}>
+      <UserContext.Provider value={{user, logout, login}}>
           <div>
               <Switch>
                   <Route exact = {true} path = {'/'} component = {SignIn}/>
