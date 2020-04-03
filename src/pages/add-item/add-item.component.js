@@ -73,13 +73,13 @@ const AddItemComponent = ({enqueueSnackbar, history}) => {
             setTitle(value);
         } else if (name === 'price') {
             if (value) {
-                setPrice(value);
+                setPrice(+value);
             } else {
                 setPrice("")
             }
         } else if (name === 'calories') {
             if (value) {
-                setCalories(value);
+                setCalories(+value);
             } else {
                 setCalories("")
             }
