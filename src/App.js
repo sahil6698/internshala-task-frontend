@@ -18,13 +18,11 @@ function App({history}) {
     const logout = async () => {
         setLoading(true);
         GenUtil.unSetJWT();
-        await updateUser();
         history.push('/');
         setLoading(false);
     };
     const updateUser = async () => {
         setLoading(true);
-
         if (GenUtil.GetJWT()) {
             const res = await fetch(`${BASEURL}user`, {
                 headers: {
@@ -46,12 +44,11 @@ function App({history}) {
                     createdAt: data.createdAt,
                     updatedAt: data.updatedAt,
                     id: data.id
-                })
+                });
                 setLoading(false);
             }
         } else {
             await logout();
-            setLoading(false);
         }
     };
     useEffect(() => {
