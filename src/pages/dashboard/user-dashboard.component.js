@@ -77,7 +77,8 @@ const UserDashboard = ({enqueueSnackbar, history}) => {
 
 
         const asyncFetchMenuItems = async () => {
-            const res = await fetch(`${BASEURL}menu-item`, {
+            const fetchURl = user.role === 'customer' ? `${BASEURL}menu-item` : `${BASEURL}menu-item/restaurant`;
+            const res = await fetch(fetchURl, {
                 method: 'GET',
                 headers: {
                     'authorization': GenUtil.GetJWT()

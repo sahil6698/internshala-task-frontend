@@ -28,13 +28,13 @@ export default function OrdersTable({orders}) {
 
     const columns = user.role === 'customer' ? [
         { id: 'orderId', label: 'Order Id', minWidth: 20 },
-        { id: 'restaurantName', label: 'Restaurant Name', minWidth: 20 },
-        { id: 'item', label: 'Dish Ordered', mi2nWidth: 200 },
+        { id: 'restaurantName', label: 'Restaurant Name', minWidth: 100 },
+        { id: 'item', label: 'Dish Ordered', mi2nWidth: 100 },
         { id: 'total', label: 'Order Total', minWidth: 100 },
     ] : [
         { id: 'orderId', label: 'Order Id', minWidth: 20 },
         { id: 'email', label: 'Customer Email', minWidth: 100 },
-        { id: 'item', label: 'Dish Ordered', mi2nWidth: 200 },
+        { id: 'item', label: 'Dish Ordered', mi2nWidth: 100 },
         { id: 'total', label: 'Order Total', minWidth: 100 },
     ] ;
 

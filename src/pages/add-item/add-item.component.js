@@ -143,7 +143,7 @@ const AddItemComponent = ({enqueueSnackbar, history}) => {
                                 onChange={handleChange}
                                 fullWidth
                                 id="title"
-                                label="Title"
+                                label="Dish Name"
                                 autoFocus
                             />
                         </Grid>
