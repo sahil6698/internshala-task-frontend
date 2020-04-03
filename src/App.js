@@ -9,16 +9,22 @@ import {BASEURL} from "./assets/contants";
 import AddItemComponent from "./pages/add-item/add-item.component";
 import NotFoundComponent from "./components/not-found.component";
 import {withRouter} from 'react-router-dom';
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 export const UserContext = createContext({});
 function App({history}) {
     const [user, setUser] = useState({});
+    const [loading, setLoading] = useState(true);
     const logout = async () => {
+        setLoading(true);
         GenUtil.unSetJWT();
         await updateUser();
         history.push('/');
+        setLoading(false);
     };
     const updateUser = async () => {
+        setLoading(true);
+
         if (GenUtil.GetJWT()) {
             const res = await fetch(`${BASEURL}user`, {
                 headers: {
@@ -41,9 +47,11 @@ function App({history}) {
                     updatedAt: data.updatedAt,
                     id: data.id
                 })
+                setLoading(false);
             }
         } else {
-            setUser({});
+            await logout();
+            setLoading(false);
         }
     };
     useEffect(() => {
@@ -55,17 +63,18 @@ function App({history}) {
     };
 
     return (
-      <UserContext.Provider value={{user, logout, login}}>
-          <div>
-              <Switch>
-                  <Route exact = {true} path = {'/'} component = {SignIn}/>
-                  <Route exact={true} path={'/register'} component = {SignUp} />
-                  <Route exact={true} path={'/dashboard'} component = {UserDashboard} />
-                  <Route exact={true} path={'/menu/add'} component = {AddItemComponent} />
-                  <Route path={'*'} component={NotFoundComponent} />
-              </Switch>
-          </div>
-      </UserContext.Provider>
+        loading ? <CircularProgress />:
+            <UserContext.Provider value={{user, logout, login}}>
+                <div>
+                    <Switch>
+                        <Route exact = {true} path = {'/'} component = {SignIn}/>
+                        <Route exact={true} path={'/register'} component = {SignUp} />
+                        <Route exact={true} path={'/dashboard'} component = {UserDashboard} />
+                        <Route exact={true} path={'/menu/add'} component = {AddItemComponent} />
+                        <Route path={'*'} component={NotFoundComponent} />
+                    </Switch>
+                </div>
+            </UserContext.Provider>
   );
 }
 
