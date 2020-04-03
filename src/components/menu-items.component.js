@@ -113,7 +113,7 @@ const MenuItemsTable = ({menuItems, asyncFetchOrders, enqueueSnackbar}) => {
                                 let menuItemId = row['id'];
                                 let restaurantId = row['restaurantId'];
                                 return (
-                                    <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+                                    <TableRow hover role="checkbox" tabIndex={-1} key={row.id}>
                                         {columns.map((column) => {
                                             let value;
                                             if (column.id === 'buy') {
