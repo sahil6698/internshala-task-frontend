@@ -8,10 +8,10 @@ import GenUtil from "./gen/gen-util";
 import {BASEURL} from "./assets/contants";
 import AddItemComponent from "./pages/add-item/add-item.component";
 import NotFoundComponent from "./components/not-found.component";
-
+import {withRouter} from 'react-router-dom';
 
 export const UserContext = createContext({});
-function App() {
+function App({history}) {
     const [user, setUser] = useState({});
     const logout = async () => {
         GenUtil.unSetJWT();
@@ -25,10 +25,10 @@ function App() {
                     'authorization': GenUtil.GetJWT()
                 }
             });
+            if (res.status === 401) {
+                await logout()
+            }
             if (res.status < 300 ){
-                if (res.status === 401) {
-                    await logout()
-                }
                 const jsonRes = await res.json();
                 const data = jsonRes.data;
                 setUser({
@@ -69,4 +69,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);
