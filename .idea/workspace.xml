@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5796f3c5-597f-4c52-95e8-ac0f157f746f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/contants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu-items.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/not-found.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/orders/orders.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gen/gen-util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-item/add-item.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/user-dashboard.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sign-in/signin.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sign-up/signup.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/company/company.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/homepage/homepage.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/homepage/homepage.styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +67,19 @@
       <updated>1583586752008</updated>
       <workItem from="1583586753856" duration="13931000" />
       <workItem from="1584338150960" duration="314000" />
-      <workItem from="1585842100267" duration="19908000" />
+      <workItem from="1585842100267" duration="21282000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+      </list>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="255" y="179" key="EditFileWatcherDialog" timestamp="1583591189471">
@@ -168,9 +154,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="311" y="143" width="657" height="514" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585906364549" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1585906654804">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1585909022309">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585906654804" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585909022309" />
   </component>
 </project>
