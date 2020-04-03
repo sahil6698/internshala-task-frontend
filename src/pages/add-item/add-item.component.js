@@ -155,6 +155,7 @@ const AddItemComponent = ({enqueueSnackbar, history}) => {
                                 id="price"
                                 value={price}
                                 type='number'
+                                inputProps={{min: '0', max: '10000', step: "1"} }
                                 onChange={handleChange}
                                 label="Price"
                                 name="price"
@@ -169,6 +170,7 @@ const AddItemComponent = ({enqueueSnackbar, history}) => {
                                 id="calories"
                                 value={calories}
                                 type='number'
+                                inputProps={{min: '0', max: '10000', step: "1"} }
                                 onChange={handleChange}
                                 label="Calories"
                                 name="calories"

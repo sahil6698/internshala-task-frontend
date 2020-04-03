@@ -65,13 +65,14 @@ const UserDashboard = ({enqueueSnackbar, history}) => {
     useEffect(() => {
         if (!GenUtil.GetJWT()) {
             history.push('/');
-            signInToContinueToast()
+            signInToContinueToast();
             return;
         }
 
         if (Object.keys(user).length === 0) {
             GenUtil.unSetJWT();
             signInToContinueToast();
+            history.push('/');
             return;
         }
 
@@ -90,8 +91,8 @@ const UserDashboard = ({enqueueSnackbar, history}) => {
             }
             setMenuItems(jsonRes.data);
         };
-        asyncFetchMenuItems()
-        asyncFetchOrders()
+        asyncFetchMenuItems();
+        asyncFetchOrders();
     }, []);
 
     return(
