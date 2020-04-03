@@ -2,17 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5796f3c5-597f-4c52-95e8-ac0f157f746f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/contants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu-items.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/not-found.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/orders/orders.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gen/gen-util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/add-item/add-item.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/user-dashboard.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/sign-in/signin.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/sign-up/signup.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/homepage/homepage.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/homepage/homepage.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/company/company.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/homepage/homepage.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/homepage/homepage.styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +66,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="signin.component.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/pages/sign-in/signin.component.js" working-dir="$PROJECT_DIR$/src/pages/sign-in">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.signin.component.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -46,7 +86,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583586752008</updated>
-      <workItem from="1583586753856" duration="13187000" />
+      <workItem from="1583586753856" duration="13931000" />
+      <workItem from="1584338150960" duration="314000" />
+      <workItem from="1585842100267" duration="19908000" />
     </task>
     <servers />
   </component>
@@ -58,9 +100,77 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="255" y="179" key="EditFileWatcherDialog/0.0.1280.800@0.0.1280.800" timestamp="1583591189471" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1583605932358">
+    <state width="1238" height="258" key="GridCell.Tab.0.bottom" timestamp="1585856633451">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1583605932358" />
+    <state width="1238" height="258" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585856633451" />
+    <state width="1238" height="258" key="GridCell.Tab.0.center" timestamp="1585856633448">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585856633448" />
+    <state width="1238" height="258" key="GridCell.Tab.0.left" timestamp="1585856633446">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585856633446" />
+    <state width="1238" height="258" key="GridCell.Tab.0.right" timestamp="1585856633449">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585856633449" />
+    <state width="1238" height="258" key="GridCell.Tab.1.bottom" timestamp="1585856633455">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585856633455" />
+    <state width="1238" height="258" key="GridCell.Tab.1.center" timestamp="1585856633453">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1585856633453" />
+    <state width="1238" height="258" key="GridCell.Tab.1.left" timestamp="1585856633452">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1585856633452" />
+    <state width="1238" height="258" key="GridCell.Tab.1.right" timestamp="1585856633454">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1585856633454" />
+    <state width="1238" height="258" key="GridCell.Tab.2.bottom" timestamp="1585856633459">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.2.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585856633459" />
+    <state width="1238" height="258" key="GridCell.Tab.2.center" timestamp="1585856633457">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.2.center/0.0.1280.800@0.0.1280.800" timestamp="1585856633457" />
+    <state width="1238" height="258" key="GridCell.Tab.2.left" timestamp="1585856633456">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.2.left/0.0.1280.800@0.0.1280.800" timestamp="1585856633456" />
+    <state width="1238" height="258" key="GridCell.Tab.2.right" timestamp="1585856633458">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.2.right/0.0.1280.800@0.0.1280.800" timestamp="1585856633458" />
+    <state width="1238" height="258" key="GridCell.Tab.3.bottom" timestamp="1585856633463">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.3.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585856633463" />
+    <state width="1238" height="258" key="GridCell.Tab.3.center" timestamp="1585856633461">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.3.center/0.0.1280.800@0.0.1280.800" timestamp="1585856633461" />
+    <state width="1238" height="258" key="GridCell.Tab.3.left" timestamp="1585856633460">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.3.left/0.0.1280.800@0.0.1280.800" timestamp="1585856633460" />
+    <state width="1238" height="258" key="GridCell.Tab.3.right" timestamp="1585856633462">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="258" key="GridCell.Tab.3.right/0.0.1280.800@0.0.1280.800" timestamp="1585856633462" />
+    <state x="311" y="143" width="657" height="514" key="find.popup" timestamp="1585906364549">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="311" y="143" width="657" height="514" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585906364549" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1585906654804">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585906654804" />
   </component>
 </project>
